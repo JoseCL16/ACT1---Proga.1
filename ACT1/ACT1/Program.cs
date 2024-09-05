@@ -13,13 +13,14 @@ namespace ACT1
             string isFriendly = Console.ReadLine().ToLower();
 
             Trainer trainer;
+
             if (isFriendly == "sí" || isFriendly == "si")
             {
                 trainer = new FriendNPC(trainerName);
             }
             else
             {
-                trainer = new Trainer(trainerName);
+                trainer = new BadNPC(trainerName);
             }
 
             trainer.Greet();

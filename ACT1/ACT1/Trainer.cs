@@ -14,7 +14,6 @@ namespace ACT1
 
         public virtual void Greet()
         {
-            Console.WriteLine($"{Name} dice: Hola, ¿cómo estás?");
             Console.WriteLine($"{Name} Hi");
         }
     }
